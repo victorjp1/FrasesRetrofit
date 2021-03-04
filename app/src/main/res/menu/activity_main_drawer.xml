@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:showIn="navigation_view">
+        <group android:checkableBehavior="single">
+            <item
+                android:id="@+id/nav_frase_del_dia"
+                android:title="@string/frase_del_dia"/>
+
+        </group>
+    <item android:title="@string/nav_usuario">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_login"
+                    android:title="@string/login"/>
+            </group>
+        </menu>
+    </item>
+    <item android:title="@string/nav_consultas">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_consulta_frase"
+                    android:title="@string/consultar_frases"/>
+                <item
+                    android:id="@+id/nav_consulta_frase_autor"
+                    android:title="@string/consultar_por_autor"/>
+                <item
+                    android:id="@+id/nav_consulta_frase_categoria"
+                    android:title="@string/consultar_por_categoria"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="@string/nav_modificar">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_modificar_frase"
+                    android:title="@string/modificar_frase"/>
+                <item
+                    android:id="@+id/nav_modificar_autor"
+                    android:title="@string/modificar_autor"/>
+                <item
+                    android:id="@+id/nav_modificar_categoria"
+                    android:title="@string/modificar_categoria"/>
+            </group>
+        </menu>
+    </item>
+    <item android:title="@string/nav_add">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_add_frase"
+                    android:title="@string/add_frase"/>
+                <item
+                    android:id="@+id/nav_add_autor"
+                    android:title="@string/add_autor"/>
+                <item
+                    android:id="@+id/nav_add_categoria"
+                    android:title="@string/add_categoria"/>
+            </group>
+        </menu>
+    </item>
+    <item android:title="@string/nav_eliminar">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_eliminar_frase"
+                    android:title="@string/eliminar_frase"/>
+                <item
+                    android:id="@+id/nav_eliminar_autor"
+                    android:title="@string/eliminar_autor"/>
+                <item
+                    android:id="@+id/nav_eliminar_categoria"
+                    android:title="@string/eliminar_categor_a"/>
+            </group>
+        </menu>
+    </item>
+</menu>

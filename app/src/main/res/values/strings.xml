@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">FrasesRetrofit</string>
+    <string name="navigation_drawer_open">Abrir navigation drawer</string>
+    <string name="navigation_drawer_close">Cerrar navigation drawer</string>
+    <string name="botonInsertar">INSERTAR</string>
+    <string name="TituloAddCategoria">Añadir categoría</string>
+    <string name="botonModificar">MODIFICAR</string>
+    <string name="TituloModificarCategoria">Modificar categoria</string>
+    <string name="TituloAddFrase">Añadir frase</string>
+    <string name="TituloModificarFrase">Modificar frase</string>
+    <string name="tituloAddAutor">Añadir autor</string>
+    <string name="TituloModificarAutor">Modificar autor</string>
+    <string name="tituloConsultarFrases">Consultar Frases</string>
+    <string name="frase_del_dia">Frase del día</string>
+    <string name="login">Login</string>
+    <string name="consultar_frases">Consultar frases</string>
+    <string name="consultar_por_autor">Frases por autor</string>
+    <string name="consultar_por_categoria">Frases por categoría</string>
+    <string name="modificar_frase">Modificar Frase</string>
+    <string name="modificar_autor">Modificar Autor</string>
+    <string name="modificar_categoria">Modificar Categoria</string>
+    <string name="add_frase">Añadir Frase</string>
+    <string name="add_autor">Añadir Autor</string>
+    <string name="add_categoria">Añadir Categoria</string>
+    <string name="eliminar_frase">Eliminar Frase</string>
+    <string name="eliminar_autor">Eliminar Autor</string>
+    <string name="eliminar_categor_a">Eliminar Categoría</string>
+    <string name="nav_eliminar">Eliminar</string>
+    <string name="nav_add">Añadir</string>
+    <string name="nav_modificar">Modificar</string>
+    <string name="nav_consultas">Consultas</string>
+    <string name="nav_usuario">Usuario</string>
+    <string name="tituloEliminarCategoria">Eliminar categoría</string>
+    <string name="botonEliminar">ELIMINAR</string>
+    <string name="tituloEliminarAutor">Eliminar autor</string>
+    <string name="tituloEliminarFrase">Eliminar frase</string>
+</resources>

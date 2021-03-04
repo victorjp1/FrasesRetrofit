@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/etProfesionAutor"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Ej: Carpintero"
+        app:layout_constraintStart_toStartOf="@+id/lblProfesionAutor"
+        app:layout_constraintTop_toBottomOf="@+id/lblProfesionAutor" />
+
+    <TextView
+        android:id="@+id/lblProfesionAutor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Profesión"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="@+id/etFechaMuerteAutor"
+        app:layout_constraintTop_toBottomOf="@+id/etFechaMuerteAutor" />
+
+    <TextView
+        android:id="@+id/lblFechaMuerteAutor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Fecha muerte (Número entero)"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="@+id/etFechaNacimientoAutor"
+        app:layout_constraintTop_toBottomOf="@+id/etFechaNacimientoAutor" />
+
+    <TextView
+        android:id="@+id/tvTituloFrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Modificar autor"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNombreAutor"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Ej: Alberto Mengual"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblNombreAutor" />
+
+    <TextView
+        android:id="@+id/lblNombreAutor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Nombre"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#1B1515"
+        app:layout_constraintStart_toStartOf="@+id/etNombreAutor"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloFrase" />
+
+    <Button
+        android:id="@+id/bAnterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Anterior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bSiguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Siguiente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/bAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Modificar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bSiguiente"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toEndOf="@+id/bAnterior" />
+
+    <TextView
+        android:id="@+id/lblFechaNacimientoAutor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Fecha nacimiento (Número entero)"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="@+id/etNombreAutor"
+        app:layout_constraintTop_toBottomOf="@+id/etNombreAutor" />
+
+    <EditText
+        android:id="@+id/etFechaNacimientoAutor"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Ej: 1920"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="@+id/lblFechaNacimientoAutor"
+        app:layout_constraintTop_toBottomOf="@+id/lblFechaNacimientoAutor" />
+
+    <EditText
+        android:id="@+id/etFechaMuerteAutor"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Ej: 1970"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="@+id/lblFechaMuerteAutor"
+        app:layout_constraintTop_toBottomOf="@+id/lblFechaMuerteAutor" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

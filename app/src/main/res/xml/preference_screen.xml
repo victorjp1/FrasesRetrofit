@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="Datos de conexión">
+
+        <EditTextPreference
+            android:key="ip"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="Indica la IP del equipo que contiene API REST"
+            android:title="IP"
+            app:dialogTitle="Introduce la IP" />
+        <EditTextPreference
+            android:key="puerto"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="Introduce el puerto"
+            android:title="Puerto"
+            app:dialogTitle="Introduce el puerto del API REST" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:title="Frase del día">
+
+        <SwitchPreference
+            android:defaultValue="true"
+            android:key="notificacion"
+            android:title="Enviar notificación frase del día" />
+        <EditTextPreference
+            android:key="hora"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:summary="Indica la hora a la que se mostrará el mensaje del día"
+            android:title="Hora mensaje del día"
+            app:dialogTitle="Introduce la hora formato (HH:mm) Ej: 09:45" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/sCategoriasFrase"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@+id/tvCategoriaModificarFrase"
+        app:layout_constraintTop_toBottomOf="@+id/tvCategoriaModificarFrase" />
+
+    <TextView
+        android:id="@+id/tvCategoriaModificarFrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Categoria"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="@+id/sAutorFrase"
+        app:layout_constraintTop_toBottomOf="@+id/sAutorFrase" />
+
+    <TextView
+        android:id="@+id/tvTituloFrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Modificar frases"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bAnterior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Anterior"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bSiguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="Siguiente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/bAction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Modificar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bSiguiente"
+        app:layout_constraintHorizontal_bias="0.527"
+        app:layout_constraintStart_toEndOf="@+id/bAnterior" />
+
+    <TextView
+        android:id="@+id/lblFechaProgramadaModficiarFrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="28dp"
+        android:text="Fecha programada (yyyy-MM-dd)"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTituloFrase" />
+
+    <EditText
+        android:id="@+id/etFechaProgramadaFrase"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="Ej: 2000-12-15"
+        android:inputType="date"
+        app:layout_constraintStart_toStartOf="@+id/lblFechaProgramadaModficiarFrase"
+        app:layout_constraintTop_toBottomOf="@+id/lblFechaProgramadaModficiarFrase" />
+
+    <TextView
+        android:id="@+id/tvAutorModificarFrase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Autor"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="@+id/etFechaProgramadaFrase"
+        app:layout_constraintTop_toBottomOf="@+id/etFechaProgramadaFrase" />
+
+    <Spinner
+        android:id="@+id/sAutorFrase"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintStart_toStartOf="@+id/tvAutorModificarFrase"
+        app:layout_constraintTop_toBottomOf="@+id/tvAutorModificarFrase" />
+
+    <TextView
+        android:id="@+id/tvContenidoModificarCategorias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Contenido frase"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintStart_toStartOf="@+id/sCategoriasFrase"
+        app:layout_constraintTop_toBottomOf="@+id/sCategoriasFrase" />
+
+    <EditText
+        android:id="@+id/etContenidoFrase"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="Ejemplo: Frase célebre"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="@+id/tvContenidoModificarCategorias"
+        app:layout_constraintTop_toBottomOf="@+id/tvContenidoModificarCategorias" />
+</androidx.constraintlayout.widget.ConstraintLayout>
